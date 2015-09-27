@@ -53,4 +53,7 @@ class FollowingTest < ActionDispatch::IntegrationTest
       xhr :delete, relationship_path(relationship)
     end
   end
+  
+  test "feed on Home page" do
+  end
 end

@@ -19,4 +19,9 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
       assert_match micropost.content, response.body    
     end
   end
+  
+  test "Stats on the Home page" do
+   log_in_as(@user)
+   get root_path
+  end
 end
